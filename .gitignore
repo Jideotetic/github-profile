@@ -61,3 +61,6 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 >>>>>>> fcb629d0d0059be185de45618bbf895b93cb75ac
+
+# Local Netlify folder
+.netlify
