@@ -26,6 +26,7 @@ export default function Layout() {
         }}>
             <CustomNavLink to="/">Home</CustomNavLink>
             <CustomNavLink to="/repositories">Repositories</CustomNavLink>
+            <CustomNavLink to="errorboundarytest">ErrorBoundaryTest</CustomNavLink>
         </nav>
     )
 }

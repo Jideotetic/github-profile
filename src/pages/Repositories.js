@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Repositories() {
     const [profile, setProfile] =useState(null);
@@ -57,7 +57,7 @@ export default function Repositories() {
                 }
             </ul>
 
-            {/* <Outlet /> */}
+            <Outlet />
         
         </>
     );
