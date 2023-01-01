@@ -22,8 +22,11 @@ class ErrorBoundary extends React.Component {
       // You can render any custom fallback UI
       return (
         <>
-          <h1>Something went wrong.</h1>
-          <p>Go back{" "}<Link to="/" onClick={redirect("/home")}>Home</Link></p>
+          <main>
+            <h1>Something went wrong.</h1>
+            <p>Go back{" "}<Link to="/" onClick={redirect("/home")}>Home</Link></p>
+          </main>
+          
         </>
       );
     }

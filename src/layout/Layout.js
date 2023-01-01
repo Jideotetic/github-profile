@@ -1,32 +1,36 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import "../App.css";
 
-function CustomNavLink({to, ...prop}) {
-    let activeStyle = {
-        color: "green"
-    }
-    return (
-            <NavLink style={({isActive}) => 
-                    isActive ? activeStyle : {textDecoration: "none"}
-                }
-                to={to}
-                end
-                {...prop}
-            
-            />
-    )
+function CustomNavLink({ to, ...prop }) {
+  let activeStyle = {
+    backgroundColor: "green",
+    textDecoration: "none",
+    padding: "5px",
+    borderRadius: "5px",
+  };
+
+  return (
+    <NavLink
+      style={({ isActive }) => (isActive ? activeStyle : null)}
+      to={to}
+      end
+      {...prop}
+    />
+  );
 }
 
-export default function Layout() {
+function Layout({ linkColor, style }) {
 
-    return(
-        <nav style={{
-            display: "flex",
-            justifyContent: "space-between"
-        }}>
-            <CustomNavLink to="/">Home</CustomNavLink>
-            <CustomNavLink to="/repositories">Repositories</CustomNavLink>
-            <CustomNavLink to="errorboundarytest">ErrorBoundaryTest</CustomNavLink>
-        </nav>
-    )
+  let classes = `${linkColor} ${style}`
+  
+  return (
+    <>
+      <nav className={classes}>
+        <CustomNavLink to="/">About</CustomNavLink>
+        <CustomNavLink to="/repos">Repos</CustomNavLink>
+      </nav>
+    </>
+  );
 }
+
+export default Layout;
