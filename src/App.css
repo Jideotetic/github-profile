@@ -1,8 +1,7 @@
 .App {
   min-height: 100vh;
   max-width: 100vw;
-  padding: 1rem;
-  border: 1px solid red;
+  padding: 1rem;;
 }
 
 .light {
@@ -19,7 +18,6 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  border: 1px solid red;
 }
 
 a {
@@ -49,7 +47,6 @@ main {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  border: 1px solid red;
 }
 
 img {
@@ -81,7 +78,6 @@ li .links {
     display: flex;
     width: 60%;
     font-size: 1.5rem;
-    border: 1px solid red;
     justify-content: space-evenly;
   }
 
