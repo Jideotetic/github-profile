@@ -69,6 +69,10 @@ li .links {
   color: bisque;
 }
 
+p .links {
+  color: bisque;
+}
+
 /* ==========MEDIA QUERIES=========== */
 
 @media screen and (min-width: 768px) {

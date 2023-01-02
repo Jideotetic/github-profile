@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../custom-hooks/useFetch";
 
-export default function Repo() {
+export default function Repo({linkColor}) {
   const { repoName } = useParams();
   const [repos, error] = useFetch(
     "https://api.github.com/users/Jideotetic/repos"
@@ -22,7 +22,7 @@ export default function Repo() {
           <h2>{info.name}</h2>
           <p>
             Check out the repo on github{" "}
-            <a href={`https://www.github.com/Jideotetic/${repoName}`}>here</a>
+            <a href={`https://www.github.com/Jideotetic/${repoName}`} className={linkColor}>here</a>
           </p>
         </>
       )}

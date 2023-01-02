@@ -10,7 +10,7 @@ export default function Router({ linkColor }) {
         <Route path="/" element={<Home />} />
         <Route path="repos">
           <Route index element={<Repos linkColor={linkColor} />} />
-          <Route path=":repoName" element={<Repo />} />
+          <Route path=":repoName" element={<Repo linkColor={linkColor} />} />
         </Route>
         <Route
           path="*"
